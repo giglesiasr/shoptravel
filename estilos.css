@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(204, 219, 231);
+}
+
+h2 {
+    text-align: center;
+    font-size: 16;
+}
+
+/*Banner*/
+
+.dj-banner {
+    margin: 30px 0;
+    position: relative;
+}
+
+.dj-banner .dj-bg {
+    background-image: url(./img/viajes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.dj-banner .dj-bg img {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 0;
+    height: 300px
+}
+
+.dj-banner .dj-text {
+    text-align: center;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
+
+@media screen and (min-width:768px) {
+
+    .dj-banner .dj-bg img {
+        margin-right: 100px;
+    }
+
+    .dj-banner .dj-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        width: 50%;
+        text-align: left;
+    }
+
+    .dj-banner .dj-text h1 {
+        font-size: calc(2*1.5vw);
+    }
+
+    .dj-banner .dj-text p {
+        font-size: calc(1.2*1.5vw);
+    }
+}
+
+/*Redes sociales*/
+
+:root {
+    --facebook: #3b5999;
+    --twitter: #55acee;
+    --instagram: #e4405f;
+    --whatsapp: #1CF102;
+}
+
+.redes {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.redes ul li a {
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 10px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: 0.2s;
+}
+
+.redes ul:hover a {
+    filter: blur(2px);
+}
+
+.redes ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes ul li .redes__facebook:hover {
+    background: var(--facebook);
+}
+
+.redes ul li .redes__twitter:hover {
+    background: var(--twitter);
+}
+
+.redes ul li .redes__instagram:hover {
+    background: var(--instagram);
+}
+
+.redes ul li .redes__whatsapp:hover {
+    background: var(--whatsapp);
+}
+
+/*Pie de página*/
+
+.footer {
+    background-color: #7990cf;
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
+    color: white;
+    margin-top: 200px;
+}
+
+/* Menú */
+
+.menu {
+    background-color: rgb(180, 199, 235);
+    padding: 15px;
+    font-size: 20px;
+}
+
+.menu link {
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu link:hover {
+    background-color: rgb(47, 68, 160);
+    padding: 10px 15px 10px 15px;
+    color: white;
+}
+
+.footer p {
+    margin-top: 75px;
+}
